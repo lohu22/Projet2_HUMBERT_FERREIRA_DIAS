@@ -4,16 +4,16 @@ public class Projet {
     private int id;
     private String nom;
     private String descr;
-    private String dateDébut;
+    private String dateDebut;
     private String dateFin;
     private ArrayList<Tache> taches;
     private ArrayList<Employe> membres;
 
-    public Projet(int id, String nom, String descr, String dateDébut, String dateFin, ArrayList<Tache> taches, ArrayList<Employe> membres) {
+    public Projet(int id, String nom, String descr, String dateDebut, String dateFin, ArrayList<Tache> taches, ArrayList<Employe> membres) {
         this.id = id;
         this.nom = nom;
         this.descr = descr;
-        this.dateDébut = dateDébut;
+        this.dateDebut = dateDebut;
         this.dateFin = dateFin;
         this.taches = new ArrayList<>();
         this.membres = new ArrayList<>();

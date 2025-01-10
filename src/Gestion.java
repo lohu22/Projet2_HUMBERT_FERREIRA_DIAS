@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 
 public class Gestion {
-    private ArrayList<Employé> employés;
+    private ArrayList<Employe> employes;
     private ArrayList<Projet> projets;
 
     public Gestion(){
-        employés = new ArrayList<>();
+        employes = new ArrayList<>();
         projets = new ArrayList<>();
     }
 
-    public void ajouter_des_employés(Employé employé){
-        employés.add(employé);
+    public void ajouter_des_employés(Employe employe){
+        employes.add(employe);
     }
 
     public void supprimer_des_employés(int identifiant_employé){
