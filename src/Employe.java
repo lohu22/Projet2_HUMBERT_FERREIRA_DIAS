@@ -57,7 +57,9 @@ public class Employe {
         return historiqueProjets;
     }
 
-    public void setHistoriqueProjets{}
+    public void setHistoriqueProjets(){
+        this.historiqueProjets= historiqueProjets;
+    }
 
     public String visualisrerInfos(){
 
