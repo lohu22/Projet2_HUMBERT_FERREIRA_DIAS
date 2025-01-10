@@ -1,17 +1,22 @@
 import java.util.ArrayList;
 
 public class Projet {
-    private int identifiant;
+    private int id;
     private String nom;
-    private String date_de_début;
-    private String date_de_fin;
-    private ArrayList<Tâche> taches;
+    private String descr;
+    private String dateDébut;
+    private String dateFin;
+    private ArrayList<Tache> taches;
+    private ArrayList<Employe> membres;
 
-    public Projet(int identifiant, String nom, String date_de_début, String date_de_fin, ArrayList<Tâche> taches) {
-        this.identifiant = identifiant;
+    public Projet(int id, String nom, String descr, String dateDébut, String dateFin, ArrayList<Tache> taches, ArrayList<Employe> membres) {
+        this.id = id;
         this.nom = nom;
-        this.date_de_début = date_de_début;
-        this.date_de_fin = date_de_fin;
+        this.descr = descr;
+        this.dateDébut = dateDébut;
+        this.dateFin = dateFin;
         this.taches = new ArrayList<>();
+        this.membres = new ArrayList<>();
     }
 }
+
