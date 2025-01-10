@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Gestion {
-    private ArrayList<Employé> employés;
+    private ArrayList<Employe> employés;
     private ArrayList<Projet> projets;
 
     public Gestion(){
@@ -9,7 +9,7 @@ public class Gestion {
         projets = new ArrayList<>();
     }
 
-    public void ajouter_des_employés(Employé employé){
+    public void ajouter_des_employés(Employe employé){
         employés.add(employé);
     }
 

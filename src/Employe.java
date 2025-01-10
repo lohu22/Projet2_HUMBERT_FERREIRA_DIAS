@@ -1,22 +1,31 @@
+import java.util.ArrayList;
+
 public class Employe {
-    private int identifiant;
+    private static int idCompteur = 0;
+    private int id;
     private String nom;
     private String poste;
     private String email;
+    private ArrayList<Projet> historiqueProjets;
 
-    public Employe(int identifiant, String nom, String poste, String email){
-        this.identifiant = identifiant;
+    public Employe(String nom, String poste, String email, ArrayList<Projet> historiqueProjets){
+        this.id = id ++;
         this.nom = nom;
         this.poste = poste;
         this.email = email;
+        this.historiqueProjets= new ArrayList<>();
+    }
+
+    public static Employe newEmploye(String nom, String poste, String email, ArrayList<Projet> historiqueProjets){
+        return new Employe(nom, poste, email, historiqueProjets);
     }
 
     public int getIdentifiant() {
-        return identifiant;
+        return id;
     }
 
     public void setIdentifiant(int identifiant) {
-        this.identifiant = identifiant;
+        this.id = identifiant;
     }
 
     public String getNom() {
@@ -33,5 +42,28 @@ public class Employe {
 
     public void setPoste(String poste) {
         this.poste = poste;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(){
+        this.email = email;
+    }
+
+    public ArrayList<Projet> gethistoriqueProjets(){
+
+        return historiqueProjets;
+    }
+
+    public void setHistoriqueProjets{}
+
+    public String visualisrerInfos(){
+
+        return "id:"+ getIdentifiant()+"Nom:"+ getNom()+"Poste:"+ getPoste()+"Email:" + getEmail() ;
+    }
+    public String afficherHistorique(){
+        return "historique des projets:"+ gethistoriqueProjets();
     }
 }
